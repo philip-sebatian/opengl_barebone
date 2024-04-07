@@ -14,7 +14,8 @@
 			"target_link_libraries",
 			"set_property",
 			"find_package",
-			"set_target_properties"
+			"set_target_properties",
+			"include_directories"
 		],
 		"files" : 
 		[
@@ -29,19 +30,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 5,
+				"line" : 6,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 11,
+				"line" : 12,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 4,
+				"line" : 5,
 				"parent" : 0
 			},
 			{
@@ -59,6 +60,12 @@
 				"file" : 1,
 				"line" : 510,
 				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
 			}
 		]
 	},
@@ -69,6 +76,17 @@
 			[
 				{
 					"fragment" : "-g"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "/home/ubuntu/opengl/src"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ubuntu/opengl/dependencies"
 				}
 			],
 			"language" : "CXX",
@@ -82,6 +100,17 @@
 			[
 				{
 					"fragment" : "-g"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "/home/ubuntu/opengl/src"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ubuntu/opengl/dependencies"
 				}
 			],
 			"language" : "C",
@@ -138,13 +167,6 @@
 				0,
 				1
 			]
-		},
-		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				2
-			]
 		}
 	],
 	"sources" : 
@@ -160,11 +182,6 @@
 			"compileGroupIndex" : 1,
 			"path" : "src/glad.c",
 			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "src/glad.h",
-			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

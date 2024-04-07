@@ -49,7 +49,7 @@ CMakeFiles/first_graph.dir/src/glad.c.o: /home/ubuntu/opengl/src/glad.c \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h /home/ubuntu/opengl/src/./glad.h \
+ /usr/include/strings.h /home/ubuntu/opengl/dependencies/glad/glad.h \
  /usr/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \

@@ -1,12 +1,12 @@
 [
 {
   "directory": "/home/ubuntu/opengl/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/first_graph.dir/src/main.cpp.o -c /home/ubuntu/opengl/src/main.cpp",
+  "command": "/usr/bin/g++  -I/home/ubuntu/opengl/src -I/home/ubuntu/opengl/dependencies -g -o CMakeFiles/first_graph.dir/src/main.cpp.o -c /home/ubuntu/opengl/src/main.cpp",
   "file": "/home/ubuntu/opengl/src/main.cpp"
 },
 {
   "directory": "/home/ubuntu/opengl/build",
-  "command": "/usr/bin/gcc   -g -o CMakeFiles/first_graph.dir/src/glad.c.o -c /home/ubuntu/opengl/src/glad.c",
+  "command": "/usr/bin/gcc  -I/home/ubuntu/opengl/src -I/home/ubuntu/opengl/dependencies -g -o CMakeFiles/first_graph.dir/src/glad.c.o -c /home/ubuntu/opengl/src/glad.c",
   "file": "/home/ubuntu/opengl/src/glad.c"
 }
 ]

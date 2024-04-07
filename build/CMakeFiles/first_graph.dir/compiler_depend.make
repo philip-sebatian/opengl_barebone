@@ -59,7 +59,7 @@ CMakeFiles/first_graph.dir/src/glad.c.o: /home/ubuntu/opengl/src/glad.c \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h \
-  /home/ubuntu/opengl/src/glad.h \
+  /home/ubuntu/opengl/dependencies/glad/glad.h \
   /usr/include/KHR/khrplatform.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h \
   /usr/include/stdint.h \
@@ -251,7 +251,7 @@ CMakeFiles/first_graph.dir/src/main.cpp.o: /home/ubuntu/opengl/src/main.cpp \
   /usr/include/c++/12/bits/ostream.tcc \
   /usr/include/c++/12/istream \
   /usr/include/c++/12/bits/istream.tcc \
-  /home/ubuntu/opengl/src/glad.h \
+  /home/ubuntu/opengl/dependencies/glad/glad.h \
   /usr/include/KHR/khrplatform.h \
   /usr/include/GLFW/glfw3.h
 
@@ -476,8 +476,6 @@ CMakeFiles/first_graph.dir/src/main.cpp.o: /home/ubuntu/opengl/src/main.cpp \
 
 /usr/include/c++/12/bits/concept_check.h:
 
-/home/ubuntu/opengl/src/glad.h:
-
 /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h:
 
 /usr/include/c++/12/bits/string_view.tcc:
@@ -509,6 +507,10 @@ CMakeFiles/first_graph.dir/src/main.cpp.o: /home/ubuntu/opengl/src/main.cpp \
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/c++/12/bits/allocator.h:
+
+/usr/include/dlfcn.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
@@ -600,6 +602,8 @@ CMakeFiles/first_graph.dir/src/main.cpp.o: /home/ubuntu/opengl/src/main.cpp \
 
 /usr/include/c++/12/bits/locale_facets.tcc:
 
+/home/ubuntu/opengl/dependencies/glad/glad.h:
+
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
@@ -625,10 +629,6 @@ CMakeFiles/first_graph.dir/src/main.cpp.o: /home/ubuntu/opengl/src/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/usr/include/dlfcn.h:
-
-/usr/include/c++/12/bits/allocator.h:
 
 /usr/include/c++/12/bits/invoke.h:
 
