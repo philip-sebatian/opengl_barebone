@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/ubuntu/opengl/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/first_graph.dir/src/main.cpp.o -c /home/ubuntu/opengl/src/main.cpp",
+  "file": "/home/ubuntu/opengl/src/main.cpp"
+}
+]

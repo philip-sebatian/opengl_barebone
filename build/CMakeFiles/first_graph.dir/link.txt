@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic CMakeFiles/first_graph.dir/src/main.cpp.o -o first_graph  -lglfw 

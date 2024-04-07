@@ -1,0 +1,3 @@
+/home/ubuntu/opengl/build/CMakeFiles/first_graph.dir
+/home/ubuntu/opengl/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/opengl/build/CMakeFiles/rebuild_cache.dir
