@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/ubuntu/opengl/src/glad.c" "CMakeFiles/first_graph.dir/src/glad.c.o" "gcc" "CMakeFiles/first_graph.dir/src/glad.c.o.d"
   "/home/ubuntu/opengl/src/main.cpp" "CMakeFiles/first_graph.dir/src/main.cpp.o" "gcc" "CMakeFiles/first_graph.dir/src/main.cpp.o.d"
   )
 
