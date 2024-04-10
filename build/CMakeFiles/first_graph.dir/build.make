@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/opengl
+CMAKE_SOURCE_DIR = /home/ubuntu/opengl_barebone
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/opengl/build
+CMAKE_BINARY_DIR = /home/ubuntu/opengl_barebone/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/first_graph.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/first_graph.dir/progress.make
 include CMakeFiles/first_graph.dir/flags.make
 
 CMakeFiles/first_graph.dir/src/main.cpp.o: CMakeFiles/first_graph.dir/flags.make
-CMakeFiles/first_graph.dir/src/main.cpp.o: /home/ubuntu/opengl/src/main.cpp
+CMakeFiles/first_graph.dir/src/main.cpp.o: /home/ubuntu/opengl_barebone/src/main.cpp
 CMakeFiles/first_graph.dir/src/main.cpp.o: CMakeFiles/first_graph.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/first_graph.dir/src/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/first_graph.dir/src/main.cpp.o -MF CMakeFiles/first_graph.dir/src/main.cpp.o.d -o CMakeFiles/first_graph.dir/src/main.cpp.o -c /home/ubuntu/opengl/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/opengl_barebone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/first_graph.dir/src/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/first_graph.dir/src/main.cpp.o -MF CMakeFiles/first_graph.dir/src/main.cpp.o.d -o CMakeFiles/first_graph.dir/src/main.cpp.o -c /home/ubuntu/opengl_barebone/src/main.cpp
 
 CMakeFiles/first_graph.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/first_graph.dir/src/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/opengl/src/main.cpp > CMakeFiles/first_graph.dir/src/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/opengl_barebone/src/main.cpp > CMakeFiles/first_graph.dir/src/main.cpp.i
 
 CMakeFiles/first_graph.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/first_graph.dir/src/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/opengl/src/main.cpp -o CMakeFiles/first_graph.dir/src/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/opengl_barebone/src/main.cpp -o CMakeFiles/first_graph.dir/src/main.cpp.s
 
 CMakeFiles/first_graph.dir/src/glad.c.o: CMakeFiles/first_graph.dir/flags.make
-CMakeFiles/first_graph.dir/src/glad.c.o: /home/ubuntu/opengl/src/glad.c
+CMakeFiles/first_graph.dir/src/glad.c.o: /home/ubuntu/opengl_barebone/src/glad.c
 CMakeFiles/first_graph.dir/src/glad.c.o: CMakeFiles/first_graph.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/first_graph.dir/src/glad.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_graph.dir/src/glad.c.o -MF CMakeFiles/first_graph.dir/src/glad.c.o.d -o CMakeFiles/first_graph.dir/src/glad.c.o -c /home/ubuntu/opengl/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/opengl_barebone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/first_graph.dir/src/glad.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_graph.dir/src/glad.c.o -MF CMakeFiles/first_graph.dir/src/glad.c.o.d -o CMakeFiles/first_graph.dir/src/glad.c.o -c /home/ubuntu/opengl_barebone/src/glad.c
 
 CMakeFiles/first_graph.dir/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/first_graph.dir/src/glad.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/opengl/src/glad.c > CMakeFiles/first_graph.dir/src/glad.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/opengl_barebone/src/glad.c > CMakeFiles/first_graph.dir/src/glad.c.i
 
 CMakeFiles/first_graph.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/first_graph.dir/src/glad.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/opengl/src/glad.c -o CMakeFiles/first_graph.dir/src/glad.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/opengl_barebone/src/glad.c -o CMakeFiles/first_graph.dir/src/glad.c.s
 
 # Object files for target first_graph
 first_graph_OBJECTS = \
@@ -111,7 +111,7 @@ first_graph: CMakeFiles/first_graph.dir/build.make
 first_graph: /usr/lib/x86_64-linux-gnu/libGLX.so
 first_graph: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 first_graph: CMakeFiles/first_graph.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable first_graph"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/opengl_barebone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable first_graph"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/first_graph.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +123,6 @@ CMakeFiles/first_graph.dir/clean:
 .PHONY : CMakeFiles/first_graph.dir/clean
 
 CMakeFiles/first_graph.dir/depend:
-	cd /home/ubuntu/opengl/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/opengl /home/ubuntu/opengl /home/ubuntu/opengl/build /home/ubuntu/opengl/build /home/ubuntu/opengl/build/CMakeFiles/first_graph.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/opengl_barebone/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/opengl_barebone /home/ubuntu/opengl_barebone /home/ubuntu/opengl_barebone/build /home/ubuntu/opengl_barebone/build /home/ubuntu/opengl_barebone/build/CMakeFiles/first_graph.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/first_graph.dir/depend
 

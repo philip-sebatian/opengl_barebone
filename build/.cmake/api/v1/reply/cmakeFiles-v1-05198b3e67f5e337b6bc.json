@@ -140,8 +140,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/ubuntu/opengl/build",
-		"source" : "/home/ubuntu/opengl"
+		"build" : "/home/ubuntu/opengl_barebone/build",
+		"source" : "/home/ubuntu/opengl_barebone"
 	},
 	"version" : 
 	{

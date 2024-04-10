@@ -82,11 +82,11 @@
 			[
 				{
 					"backtrace" : 7,
-					"path" : "/home/ubuntu/opengl/src"
+					"path" : "/home/ubuntu/opengl_barebone/src"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "/home/ubuntu/opengl/dependencies"
+					"path" : "/home/ubuntu/opengl_barebone/dependencies"
 				}
 			],
 			"language" : "CXX",
@@ -106,11 +106,11 @@
 			[
 				{
 					"backtrace" : 7,
-					"path" : "/home/ubuntu/opengl/src"
+					"path" : "/home/ubuntu/opengl_barebone/src"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "/home/ubuntu/opengl/dependencies"
+					"path" : "/home/ubuntu/opengl_barebone/dependencies"
 				}
 			],
 			"language" : "C",

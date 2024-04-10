@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ubuntu/opengl/build"
+			"value" : "/home/ubuntu/opengl_barebone/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -555,7 +555,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ubuntu/opengl/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/ubuntu/opengl_barebone/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -615,7 +615,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ubuntu/opengl"
+			"value" : "/home/ubuntu/opengl_barebone"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1303,7 +1303,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ubuntu/opengl/build"
+			"value" : "/home/ubuntu/opengl_barebone/build"
 		},
 		{
 			"name" : "first_graph_IS_TOP_LEVEL",
@@ -1327,7 +1327,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ubuntu/opengl"
+			"value" : "/home/ubuntu/opengl_barebone"
 		}
 	],
 	"kind" : "cache",

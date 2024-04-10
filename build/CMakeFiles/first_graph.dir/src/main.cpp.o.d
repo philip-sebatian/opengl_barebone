@@ -1,5 +1,5 @@
 CMakeFiles/first_graph.dir/src/main.cpp.o: \
- /home/ubuntu/opengl/src/main.cpp /usr/include/stdc-predef.h \
+ /home/ubuntu/opengl_barebone/src/main.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/12/iostream \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -148,5 +148,5 @@ CMakeFiles/first_graph.dir/src/main.cpp.o: \
  /usr/include/c++/12/bits/basic_ios.tcc \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
  /usr/include/c++/12/bits/istream.tcc \
- /home/ubuntu/opengl/dependencies/glad/glad.h \
+ /home/ubuntu/opengl_barebone/dependencies/glad/glad.h \
  /usr/include/KHR/khrplatform.h /usr/include/GLFW/glfw3.h
