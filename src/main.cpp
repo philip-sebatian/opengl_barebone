@@ -1,23 +1,55 @@
 #include <iostream>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include <fstream>
+#include <sstream>
+struct ShaderProgramSource{
+    std::string VertexSource;
+    std::string FragmentSource;
+};
+static ShaderProgramSource Parseshader(const std::string& filepath) {
+    std::ifstream stream(filepath);
+    std::string line;
+    enum class ShaderType {
+        NONE = -1, VERTEX = 0, FRAGMENT = 1
+    };
+    std::stringstream ss[2];
+    ShaderType type = ShaderType::NONE;
+    while (getline(stream, line)) {
+        if (line.find("#shader") != std::string::npos) {
+            if (line.find("vertex") != std::string::npos) {
+                type = ShaderType::VERTEX;
+                std::cout << "Detected Vertex Shader\n";
+            }
+            else if (line.find("fragment") != std::string::npos) {
+                type = ShaderType::FRAGMENT;
+                std::cout << "Detected Fragment Shader\n";
+            }
+        }
+        else {
+            std::cout << "Appending line to type: " << (int)type << "\n";
+            ss[(int)type] << line << "\n";
+        }
+    }
 
-const char *vertexShaderSource = "#version 330 core\n"
-    "layout(location = 0) in vec3 aPos;\n"
-    "void main()\n"
-    "{\n"
-    "   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
-    "}\0";
+    
+    return { ss[0].str(), ss[1].str() };
+}
 
-const char *fragmentShaderSource = "#version 330 core\n"
-    "out vec4 FragColor;\n"
-    "void main()\n"
-    "{\n"
-    "   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
-    "}\n\0";
+
 
 int main() {
     // Initialize GLFW
+    ShaderProgramSource ss = Parseshader("res/shader/basic.shader");
+    const char* vertexShaderSource = ss.VertexSource.c_str();
+    const char* fragmentShaderSource = ss.FragmentSource.c_str();
+    
+    std::cout<<fragmentShaderSource<<std::endl;
+   // std::cout << "Fragment Shader Source:\n" << fragmentShaderSource << std::endl;
+
+    // Rest of the code...
+
+   
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
@@ -38,36 +70,28 @@ int main() {
         return -1;
     }
     
-
-    // Compile and link shaders
-    unsigned int VBO[2],VOA[2];
-    float firstTriangle[] = {
-        -0.9f, -0.5f, 0.0f,  // left 
-        -0.0f, -0.5f, 0.0f,  // right
-        -0.45f, 0.5f, 0.0f,  // top 
-    };
-    float secondTriangle[] = {
-        0.0f, -0.5f, 0.0f,  // left
-        0.9f, -0.5f, 0.0f,  // right
-        0.45f, 0.5f, 0.0f   // top 
-    };
-
-    glGenBuffers(2,VBO);
-    glGenVertexArrays(2,VOA);
-
-    glBindVertexArray(VOA[0]);
-    glBindBuffer(GL_ARRAY_BUFFER,VBO[0]);
-    glBufferData(GL_ARRAY_BUFFER,sizeof(firstTriangle),firstTriangle,GL_STATIC_DRAW);
-    glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,3*sizeof(float),(void*)0);
-    glEnableVertexAttribArray(0);
-
-
-    glBindVertexArray(VOA[1]);
-    glBindBuffer(GL_ARRAY_BUFFER,VBO[1]);
-    glBufferData(GL_ARRAY_BUFFER,sizeof(secondTriangle),secondTriangle,GL_STATIC_DRAW);
     
-    glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,3*sizeof(float),(void*)0);
+    // Compile and link shaders
+    unsigned int VBO,VOA;
+    float vertices[] = {
+    // positions         // colors
+     0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f,   // bottom right
+    -0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,   // bottom left
+     0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f    // top 
+    }; 
+    glGenVertexArrays(1,&VOA);
+    glBindVertexArray(VOA);
+    glGenBuffers(1,&VBO);
+    glBindBuffer(GL_ARRAY_BUFFER,VBO);
+    glBufferData(GL_ARRAY_BUFFER,sizeof(vertices),vertices,GL_STATIC_DRAW);
+    glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,6*sizeof(float),(void *)(0));
+    glVertexAttribPointer(1,3,GL_FLOAT,GL_FALSE,6*sizeof(float),(void *)(3 * sizeof(float)));
     glEnableVertexAttribArray(0);
+    glEnableVertexAttribArray(1);
+    
+
+
+   
 
 
     unsigned int vertexshader ,fragmentshader , shaderProgram ;
@@ -91,22 +115,15 @@ int main() {
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
     glUseProgram(shaderProgram);
-
-    // draw first triangle using the data from the first VAO
-    glBindVertexArray(VOA[0]);
+    glBindVertexArray(VOA);
     glDrawArrays(GL_TRIANGLES, 0, 3);
-
-    // draw second triangle using the data from the second VAO
-    glBindVertexArray(VOA[1]);
-    glDrawArrays(GL_TRIANGLES, 0, 3);
-
     glfwSwapBuffers(window);
     glfwPollEvents();
     }
 
     // Cleanup
-    glDeleteVertexArrays(2, VOA);
-    glDeleteBuffers(2, VBO);
+    glDeleteVertexArrays(1, &VOA);
+    glDeleteBuffers(1, &VBO);
     
     glDeleteProgram(shaderProgram);
 

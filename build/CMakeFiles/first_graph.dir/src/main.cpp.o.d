@@ -149,4 +149,9 @@ CMakeFiles/first_graph.dir/src/main.cpp.o: \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
  /usr/include/c++/12/bits/istream.tcc \
  /home/ubuntu/opengl_barebone/dependencies/glad/glad.h \
- /usr/include/KHR/khrplatform.h /usr/include/GLFW/glfw3.h
+ /usr/include/KHR/khrplatform.h /usr/include/GLFW/glfw3.h \
+ /usr/include/c++/12/fstream /usr/include/c++/12/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
+ /usr/include/c++/12/bits/fstream.tcc /usr/include/c++/12/sstream \
+ /usr/include/c++/12/bits/sstream.tcc

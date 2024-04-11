@@ -253,8 +253,25 @@ CMakeFiles/first_graph.dir/src/main.cpp.o: /home/ubuntu/opengl_barebone/src/main
   /usr/include/c++/12/bits/istream.tcc \
   /home/ubuntu/opengl_barebone/dependencies/glad/glad.h \
   /usr/include/KHR/khrplatform.h \
-  /usr/include/GLFW/glfw3.h
+  /usr/include/GLFW/glfw3.h \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc \
+  /usr/include/c++/12/sstream \
+  /usr/include/c++/12/bits/sstream.tcc
 
+
+/usr/include/c++/12/sstream:
+
+/usr/include/c++/12/bits/fstream.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h:
+
+/usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h:
+
+/usr/include/c++/12/fstream:
 
 /usr/include/c++/12/bits/basic_ios.tcc:
 
@@ -345,6 +362,8 @@ CMakeFiles/first_graph.dir/src/main.cpp.o: /home/ubuntu/opengl_barebone/src/main
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/c++/12/bits/sstream.tcc:
 
 /usr/include/c++/12/cstdlib:
 
@@ -525,6 +544,8 @@ CMakeFiles/first_graph.dir/src/main.cpp.o: /home/ubuntu/opengl_barebone/src/main
 /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h:
 
 /usr/include/c++/12/clocale:
+
+/usr/include/c++/12/bits/codecvt.h:
 
 /home/ubuntu/opengl_barebone/src/main.cpp:
 
